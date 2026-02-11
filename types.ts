@@ -27,6 +27,7 @@ export interface StoreItem {
   brand: string;
   icon: string;
   category: string;
+  logoUrl: string; // URL da logo para o background do card
 }
 
 export interface UserStats {

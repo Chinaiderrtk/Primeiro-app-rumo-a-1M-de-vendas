@@ -78,8 +78,8 @@ const App: React.FC = () => {
   const superPrice = 39.90;
 
   return (
-    <div className="min-h-screen pb-32 bg-gray-50 flex flex-col">
-      <header className="sticky top-0 z-50 glass border-b border-gray-200 safe-pt">
+    <div className="min-h-screen pb-32 flex flex-col">
+      <header className="sticky top-0 z-50 glass border-b border-gray-200/50 safe-pt">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-gradient-to-tr from-emerald-500 to-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-indigo-100 transform transition-transform hover:scale-105 active:scale-95 cursor-pointer">
@@ -146,13 +146,13 @@ const App: React.FC = () => {
             <div className="flex items-center justify-center gap-3 mb-10">
               <button 
                 onClick={() => setBillingCycle('annual')}
-                className={`px-8 py-2.5 rounded-full text-xs font-black uppercase tracking-widest transition-all ${billingCycle === 'annual' ? 'bg-indigo-600 text-white shadow-lg' : 'bg-gray-200 text-gray-500 hover:bg-gray-300'}`}
+                className={`px-8 py-2.5 rounded-full text-xs font-black uppercase tracking-widest transition-all ${billingCycle === 'annual' ? 'bg-indigo-600 text-white shadow-lg' : 'bg-white/50 backdrop-blur-md text-gray-500 hover:bg-gray-200'}`}
               >
                 Plano Anual (2 Meses Grátis)
               </button>
               <button 
                 onClick={() => setBillingCycle('monthly')}
-                className={`px-8 py-2.5 rounded-full text-xs font-black uppercase tracking-widest transition-all ${billingCycle === 'monthly' ? 'bg-indigo-600 text-white shadow-lg' : 'bg-gray-200 text-gray-500 hover:bg-gray-300'}`}
+                className={`px-8 py-2.5 rounded-full text-xs font-black uppercase tracking-widest transition-all ${billingCycle === 'monthly' ? 'bg-indigo-600 text-white shadow-lg' : 'bg-white/50 backdrop-blur-md text-gray-500 hover:bg-gray-200'}`}
               >
                 Mensal
               </button>
@@ -160,7 +160,7 @@ const App: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
               {/* Plano ELITE */}
-              <div className="bg-white p-8 rounded-[3rem] shadow-xl border border-gray-100 flex flex-col">
+              <div className="bg-white/70 backdrop-blur-xl p-8 rounded-[3rem] shadow-xl border border-white flex flex-col">
                 <div className="mb-6">
                   <span className="text-[10px] font-black uppercase tracking-widest text-indigo-400">Plano Focado</span>
                   <h3 className="text-3xl font-black text-gray-900">Elite</h3>
@@ -192,7 +192,7 @@ const App: React.FC = () => {
               </div>
 
               {/* Plano SUPER */}
-              <div className="bg-white p-8 rounded-[3rem] shadow-2xl border-2 border-amber-400 relative overflow-hidden flex flex-col transform md:scale-105">
+              <div className="bg-white/80 backdrop-blur-2xl p-8 rounded-[3rem] shadow-2xl border-2 border-amber-400 relative overflow-hidden flex flex-col transform md:scale-105">
                 <div className="absolute top-0 right-0 bg-amber-400 text-amber-950 text-[9px] font-black px-4 py-1.5 rounded-bl-2xl uppercase tracking-widest">Recomendado</div>
                 
                 <div className="mb-6">
@@ -234,7 +234,7 @@ const App: React.FC = () => {
       </main>
 
       <nav className="fixed bottom-0 left-0 right-0 z-50 flex flex-col pointer-events-none">
-        <div className="mx-auto w-[94%] max-w-lg mb-8 glass border border-gray-200 rounded-[2.5rem] h-16 shadow-2xl flex items-center px-2 overflow-hidden pointer-events-auto">
+        <div className="mx-auto w-[94%] max-w-lg mb-8 glass border border-gray-200/50 rounded-[2.5rem] h-16 shadow-2xl flex items-center px-2 overflow-hidden pointer-events-auto">
           <button 
             onClick={() => setActiveTab('dashboard')}
             className={`flex-1 flex flex-col items-center justify-center gap-1 rounded-2xl h-12 transition-all duration-300 active:scale-90 ${activeTab === 'dashboard' ? 'bg-indigo-600 text-white shadow-xl shadow-indigo-100' : 'text-gray-400 hover:text-indigo-600'}`}

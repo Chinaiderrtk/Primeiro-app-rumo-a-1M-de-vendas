@@ -53,60 +53,66 @@ export const STORE_ITEMS: StoreItem[] = [
     id: 'gc1',
     name: 'iFood Gift Card',
     description: 'Saldo direto na sua carteira iFood para aquela refeição merecida.',
-    xpCost: 30000, // R$ 30,00
+    xpCost: 30000,
     cardValue: 'R$ 30,00',
     brand: 'iFood',
     icon: '🍕',
-    category: 'Alimentação'
+    category: 'Alimentação',
+    logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IFood_logo.svg/512px-IFood_logo.svg.png'
   },
   {
     id: 'gc2',
     name: 'Netflix Gift Card',
     description: 'Crédito para sua assinatura. Relaxe depois de um dia produtivo.',
-    xpCost: 50000, // R$ 50,00
+    xpCost: 50000,
     cardValue: 'R$ 50,00',
     brand: 'Netflix',
     icon: '🎬',
-    category: 'Entretenimento'
+    category: 'Entretenimento',
+    logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg'
   },
   {
     id: 'gc3',
     name: 'Google Play Gift Card',
     description: 'Compre apps, livros ou créditos em seus jogos favoritos.',
-    xpCost: 15000, // R$ 15,00
+    xpCost: 15000,
     cardValue: 'R$ 15,00',
     brand: 'Google Play',
     icon: '🤖',
-    category: 'Apps'
+    category: 'Apps',
+    logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Play_Arrow_logo.svg'
   },
   {
     id: 'gc4',
     name: 'PlayStation Store',
     description: 'Adicione fundos à sua conta PSN para novos desafios virtuais.',
-    xpCost: 60000, // R$ 60,00
+    xpCost: 60000,
     cardValue: 'R$ 60,00',
     brand: 'PlayStation',
     icon: '🎮',
-    category: 'Gaming'
+    category: 'Gaming',
+    logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Playstation_logo_colour.svg'
   },
   {
     id: 'gc5',
     name: 'Spotify Premium',
     description: 'Música sem anúncios para focar nos seus mini-desafios reais.',
-    xpCost: 21000, // R$ 21,00 (aprox. valor mensal)
+    xpCost: 21000,
     cardValue: '1 Mês',
     brand: 'Spotify',
     icon: '🎧',
-    category: 'Música'
+    category: 'Música',
+    logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg'
   },
   {
     id: 'gc6',
     name: 'Uber Gift Card',
     description: 'Vá mais longe com créditos para suas próximas viagens.',
-    xpCost: 25000, // R$ 25,00
+    xpCost: 25000,
     cardValue: 'R$ 25,00',
     brand: 'Uber',
     icon: '🚕',
-    category: 'Transporte'
+    category: 'Transporte',
+    logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Uber_logo_2018.svg/512px-Uber_logo_2018.svg.png'
   }
 ];
