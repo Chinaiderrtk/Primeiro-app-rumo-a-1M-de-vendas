@@ -6,6 +6,8 @@ export enum Category {
   HEALTH = 'HEALTH'
 }
 
+export type SubscriptionType = 'FREE' | 'ELITE' | 'SUPER';
+
 export interface Challenge {
   id: string;
   title: string;
@@ -16,11 +18,25 @@ export interface Challenge {
   icon: string;
 }
 
+export interface StoreItem {
+  id: string;
+  name: string;
+  description: string;
+  xpCost: number;
+  cardValue: string; // Valor do Gift Card (ex: R$ 50,00)
+  brand: string;
+  icon: string;
+  category: string;
+}
+
 export interface UserStats {
   points: number;
   streak: number;
   level: number;
   completedIds: string[];
+  journalEntries: Record<string, string>;
+  redeemedItems: string[];
+  subscription: SubscriptionType;
 }
 
 export interface LeaderboardEntry {

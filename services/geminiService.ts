@@ -2,7 +2,8 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { Category } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+// Always use the apiKey from process.env and pass it in a named parameter
+const ai = new GoogleGenAI({apiKey: process.env.API_KEY});
 
 export const generatePersonalizedChallenge = async (category: Category) => {
   const response = await ai.models.generateContent({
@@ -26,7 +27,10 @@ export const generatePersonalizedChallenge = async (category: Category) => {
   });
 
   try {
-    return JSON.parse(response.text);
+    // Access .text property directly and trim whitespace before parsing JSON
+    const text = response.text;
+    if (!text) return null;
+    return JSON.parse(text.trim());
   } catch (e) {
     console.error("Failed to parse AI response", e);
     return null;
