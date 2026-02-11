@@ -81,12 +81,17 @@ const App: React.FC = () => {
     <div className="min-h-screen pb-32 bg-gray-50 flex flex-col">
       <header className="sticky top-0 z-50 glass border-b border-gray-200 safe-pt">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-9 h-9 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-black text-xl shadow-lg shadow-indigo-100">
-              M
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-gradient-to-tr from-emerald-500 to-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-indigo-100 transform transition-transform hover:scale-105 active:scale-95 cursor-pointer">
+              <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="12" y1="20" x2="12" y2="10" />
+                <line x1="18" y1="20" x2="18" y2="4" />
+                <line x1="6" y1="20" x2="6" y2="16" />
+                <path d="M4 10 L8 6 L12 9 L16 3 L21 7" />
+              </svg>
             </div>
-            <h1 className="font-black text-lg tracking-tight text-gray-900">
-              MiniDesafios <span className="text-indigo-600">Reais</span>
+            <h1 className="font-black text-lg tracking-tight text-gray-900 leading-tight">
+              MiniDesafios <span className="text-emerald-600 block text-xs uppercase tracking-widest -mt-1 font-black">Crescimento Real</span>
             </h1>
           </div>
           
@@ -96,7 +101,7 @@ const App: React.FC = () => {
                 Nível {stats.level} {stats.subscription !== 'FREE' && `• ${stats.subscription}`}
               </span>
               <div className="w-24 bg-gray-200 h-2 rounded-full mt-1 overflow-hidden">
-                <div className="bg-indigo-600 h-full rounded-full transition-all duration-700" style={{ width: `${(stats.points % 1000) / 10}%` }}></div>
+                <div className="bg-emerald-500 h-full rounded-full transition-all duration-700" style={{ width: `${(stats.points % 1000) / 10}%` }}></div>
               </div>
             </div>
             <div className={`flex items-center justify-center w-10 h-10 rounded-full font-black text-sm border transition-colors ${

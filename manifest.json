@@ -2,14 +2,14 @@
 {
   "name": "MiniDesafios Reais",
   "short_name": "MiniDesafios",
-  "description": "Desafios práticos para o seu dia a dia.",
+  "description": "Desafios práticos para o seu dia a dia com foco em crescimento real.",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#f8fafc",
   "theme_color": "#4f46e5",
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/3064/3064197.png",
+      "src": "https://cdn-icons-png.flaticon.com/512/2454/2454282.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
